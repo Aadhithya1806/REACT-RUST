@@ -6,7 +6,10 @@ const ProductList = ({ products }) => {
             <h2 className="align-center">Products</h2>
             <ul className="flex-column bg-stone-700 ">
                 {products.map((product, index) => (
-                    <li key={index} className="flex justify-between ">
+                    <li
+                        key={index}
+                        className="flex justify-between border-red-400"
+                    >
                         <p>{index + 1}</p>
                         <strong>{product.name}</strong>
                         {product.price.toFixed(2)}
